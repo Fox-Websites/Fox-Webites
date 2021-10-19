@@ -23,3 +23,19 @@ btnMobile.addEventListener("click", toogleMenu);
 btnMobile.addEventListener("touchStart", toogleMenu);
 menuItems.addEventListener("click", toogleItemMenu);
 menuItems.addEventListener("touchStart", toogleItemMenu);
+
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
+});
