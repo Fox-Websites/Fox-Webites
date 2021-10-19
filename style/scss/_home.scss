@@ -240,6 +240,51 @@
   }
 }
 
+#budget {
+  width: 100%;
+  height: 400px;
+  background-color: $tangerine;
+  display: flex;
+  flex-direction: row;
+  #budget__image {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/images/orcamento.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #budget__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    #budget__content__title {
+      font-size: 42px;
+      font-weight: 600;
+      color: $white;
+      max-width: 600px;
+    }
+    #budget__buttom {
+      display: flex;
+      margin-top: 10px;
+      #budget__content__cta {
+        p {
+          font-weight: 600;
+          font-size: 16px;
+          color: $tangerine;
+          text-transform: uppercase;
+        }
+        background-color: $white;
+        padding: 15px 25px;
+        border-radius: 25px;
+      }
+    }
+  }
+}
+
 /* Tablets */
 @media only screen and (min-width: 788px) and (max-width: 979px) {
 }
@@ -290,6 +335,28 @@
     #projects__list {
       flex-direction: column;
       gap: 50px;
+    }
+  }
+
+  #budget {
+    height: 500px;
+    flex-direction: column;
+    #budget__image {
+      flex: 0.75;
+    }
+    #budget__content {
+      padding: 40px;
+      #budget__content__title {
+        font-size: 32px;
+        text-align: center;
+      }
+      #budget__buttom {
+        #budget__content__cta {
+          p {
+            text-align: center;
+          }
+        }
+      }
     }
   }
 }
