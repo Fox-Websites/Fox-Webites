@@ -51,6 +51,7 @@
         font-weight: 600;
         font-size: 16px;
         color: $white;
+        text-transform: uppercase;
       }
       background-color: $tangerine;
       padding: 15px 25px;
@@ -174,6 +175,7 @@
     color: $raisinBlack;
     font-size: 32px;
     font-weight: 600;
+    cursor: pointer;
     span {
       text-transform: uppercase;
       color: $tangerine;
@@ -229,6 +231,7 @@
         font-weight: 600;
         font-size: 16px;
         color: $white;
+        text-transform: uppercase;
       }
       background-color: $tangerine;
       padding: 15px 25px;
@@ -270,10 +273,23 @@
     #differential__container {
       #differential__header {
         flex-direction: column;
+        #differential__title {
+          font-size: 24px;
+        }
       }
       #differential__list {
         flex-direction: column;
       }
+    }
+  }
+
+  #projects {
+    #projects__title {
+      font-size: 24px;
+    }
+    #projects__list {
+      flex-direction: column;
+      gap: 50px;
     }
   }
 }
