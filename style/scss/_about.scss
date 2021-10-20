@@ -84,7 +84,7 @@
         max-width: 100%;
       }
       .teamwork__people__item__content__wrapper {
-        display: none;
+        // display: none;
         .teamwork__people__item__content {
           position: absolute;
           bottom: 5px;
@@ -107,15 +107,15 @@
           }
         }
       }
-      &:hover > .teamwork__people__item__content__wrapper {
-        display: block;
-      }
+      // &:hover > .teamwork__people__item__content__wrapper {
+      //   display: block;
+      // }
     }
   }
 }
 
 /* Tablets */
-@media only screen and (min-width: 788px) and (max-width: 979px) {
+@media only screen and (min-width: 768px) and (max-width: 979px) {
 }
 
 /* Smartphone */
