@@ -39,7 +39,6 @@
   }
   ul {
     padding: 5px 0 5px 50px;
-    padding-left: 50px;
     li {
       padding: 2px 0;
       list-style-type: disc;
@@ -48,4 +47,30 @@
       }
     }
   }
+}
+
+/* Tablets */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+}
+
+/* Smartphone */
+@media only screen and (max-width: 768px) {
+    #policy {
+        #policy__title {
+          font-size: 32px;
+          text-align: center;
+        }
+        #policy__last_update {
+          text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        ol {
+          padding-left: 30px;
+        }
+        ul {
+            padding-left: 30px;
+        }
+      }
 }
