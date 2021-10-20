@@ -65,25 +65,13 @@
         .portfolio__item__content__subtitle__invert {
           text-align: right;
         }
-        .portfolio__item__content__items {
-          list-style-type: disc;
-          li {
-            p {
-              font-weight: 500;
-              color: $davysGrey;
-            }
-            &::marker {
-              color: $tangerine;
-            }
-          }
-        }
         .portfolio__item__content__button {
           border: none;
           border-radius: 20px;
           background: $tangerine;
           color: $white;
           padding: 10px 20px;
-          max-width: 200px;
+          width: 200px;
           cursor: pointer;
         }
       }
@@ -129,12 +117,8 @@
           .portfolio__item__content__subtitle__invert {
             text-align: center;
           }
-          .portfolio__item__content__items {
-            text-align: center;
-            list-style-type: none;
-          }
           .portfolio__item__content__button {
-            max-width: 100%;
+            width: 100%;
           }
         }
         .portfolio__item__content__invert {
