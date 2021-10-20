@@ -1,0 +1,51 @@
+#policy {
+  width: $widthContent;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  #policy__title {
+    font-size: 64px;
+    font-weight: 600;
+    color: $raisinBlack;
+  }
+  #policy__last_update {
+    color: $davysGrey;
+    margin: 10px 0 30px 0;
+  }
+  p {
+    font-weight: 500;
+    color: $raisinBlack;
+  }
+  span {
+    color: $tangerine;
+    font-weight: bold;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 24px;
+    color: $raisinBlack;
+    margin: 25px 0 10px 0;
+  }
+  ol {
+    padding: 5px 0 5px 50px;
+    li {
+      padding: 2px 0;
+      list-style-type: decimal;
+      &::marker {
+        color: $tangerine;
+        font-weight: bold;
+      }
+    }
+  }
+  ul {
+    padding: 5px 0 5px 50px;
+    padding-left: 50px;
+    li {
+      padding: 2px 0;
+      list-style-type: disc;
+      &::marker {
+        color: $tangerine;
+      }
+    }
+  }
+}
