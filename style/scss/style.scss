@@ -7,6 +7,11 @@
 @import "contact";
 @import "policy";
 @import "terms";
+@import "modal";
+
+* {
+  box-sizing: border-box;
+}
 
 .menu__active {
   color: $tangerine !important;
@@ -62,7 +67,10 @@
         }
       }
       #header__menu__orcamento {
+        border: none;
+        cursor: pointer;
         p {
+          text-transform: uppercase;
           font-weight: 600;
           font-size: 16px;
           color: $tangerine;
@@ -158,6 +166,8 @@
       text-align: center;
     }
     #banner__cta {
+      border: none;
+      cursor: pointer;
       p {
         font-weight: 600;
         font-size: 16px;
@@ -309,6 +319,8 @@
             }
           }
           #footer__content__newsletter__form__submit {
+            text-transform: uppercase;
+            font-weight: 600;
             background-color: $tangerine;
             color: $white;
             border: none;
@@ -408,7 +420,7 @@
               max-width: 100%;
             }
           }
-        } 
+        }
       }
       #footer__information {
         flex-direction: column-reverse;
@@ -593,14 +605,14 @@
               max-width: 100%;
             }
           }
-        } 
+        }
       }
       #footer__information {
         flex-direction: column-reverse;
         #footer__information__copyright {
           p {
             color: $white;
-            font-weight: 500;
+            font-weight: 500;  
             text-align: center;
             margin-top: 30px;
           }

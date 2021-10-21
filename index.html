@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -35,9 +36,9 @@
                         <li><a href="contato.html">Contate Nos</a></li>
                     </ul>
                 </nav>
-                <a href="contato.html" id="header__menu__orcamento">
+                <button id="header__menu__orcamento">
                     <p>Orçamento</p>
-                </a>
+                </button>
             </div>
         </div>
     </header>
@@ -51,9 +52,9 @@
             <h1 id="banner__title">Desenvolvimento Profissional de WebSites</h1>
             <p id="banner_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
                 in eros elementum tristique</p>
-            <a href="contato.html" id="banner__cta">
+            <button id="banner__cta">
                 <p>Orçamento</p>
-            </a>
+            </button>
         </div>
     </section>
 
@@ -148,9 +149,9 @@
         <div id="budget__content">
             <h2 id="budget__content__title">Juntos podemos conquistar coisas incriveis!</h2>
             <div id="budget__buttom">
-                <a href="contato.html" id="budget__content__cta">
+                <button id="budget__content__cta">
                     <p>Clique aqui e faça um orçamento</p>
-                </a>
+                </button>
             </div>
         </div>
     </section>
@@ -306,8 +307,21 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <h1>Modal</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A facere aspernatur provident rerum consequatur.
+                Quas aliquid nam, dolore ex, accusantium sit possimus molestias accusamus minima saepe eos ipsum, cumque
+                asperiores.</p>
+            <button id="modal_close">Close me</button>
+        </div>
+    </div>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/scrollReveal.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

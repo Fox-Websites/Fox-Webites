@@ -209,6 +209,8 @@
       display: flex;
       margin-top: 10px;
       #budget__content__cta {
+        cursor: pointer;
+        border: none;
         p {
           font-weight: 600;
           font-size: 16px;
@@ -407,4 +409,3 @@
     }
   }
 }
- 

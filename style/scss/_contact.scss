@@ -30,12 +30,13 @@
         padding: 15px 25px;
       }
       #contact__content__form__submit {
+        text-transform: uppercase;
+        font-weight: 600;
         border: none;
         border-radius: 20px;
         background: $tangerine;
         padding: 15px 25px;
         color: $white;
-        font-weight: 500;
         cursor: pointer;
       }
     }
