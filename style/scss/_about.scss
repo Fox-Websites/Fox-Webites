@@ -78,12 +78,11 @@
     .teamwork__people__item {
       flex: 1;
       position: relative;
-      transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
       .teamwork__people__item__image {
         border-radius: 20px;
         max-width: 100%;
       }
-      .teamwork__people__item__content__wrapper {
+      .teamwork__people__item__content__wrapper { 
         // display: none;
         .teamwork__people__item__content {
           position: absolute;

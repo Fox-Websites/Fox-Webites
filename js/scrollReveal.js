@@ -17,3 +17,9 @@ ScrollReveal().reveal("#projects__title", { delay: 200 });
 ScrollReveal().reveal("#projects__subtitle", { delay: 250 });
 ScrollReveal().reveal(".project__item", { delay: 300 });
 ScrollReveal().reveal("#projects__button", { delay: 350 });
+
+ScrollReveal().reveal("#budget__content__title", { delay: 200 });
+ScrollReveal().reveal(".swiper", { delay: 250 });
+
+ScrollReveal().reveal("#posts__title", { delay: 200 });
+ScrollReveal().reveal(".posts__item", { delay: 250 });
