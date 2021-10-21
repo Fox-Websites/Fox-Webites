@@ -23,7 +23,67 @@
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .modal__header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .modal__header__title {
+        font-size: 32px;
+        font-weight: 600;
+        color: $raisinBlack;
+        text-transform: uppercase;
+        &::after {
+          content: "";
+          width: 150px;
+          height: 5px;
+          display: block;
+          margin-top: 5px;
+          background-color: $tangerine;
+        }
+      }
+      #modal__header__close {
+        color: $tangerine;
+        padding: 10px;
+        cursor: pointer;
+      }
+    }
+    .modal__description {
+      font-size: 14px;
+      color: $davysGrey;
+    }
+    .modal__form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .modal__form__input {
+        border: 1px solid $raisinBlack;
+        border-radius: 20px;
+        background: rgba(210, 218, 237, 0.17);
+        padding: 15px 25px;
+        color: $raisinBlack;
+      }
+      .modal__form__budget {
+        color: #757575;
+        option {
+          color: $raisinBlack;
+        }
+      }
+      .modal__form__submit {
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+        color: $white;
+        text-transform: uppercase;
+        background-color: $tangerine;
+        padding: 15px 25px;
+        border-radius: 25px;
+      }
+    }
   }
 }
 
@@ -34,10 +94,9 @@
 /* Smartphone */
 @media only screen and (max-width: 768px) {
   .modal-container {
+    padding: 10px;
     .modal {
-      border-radius: 0;
       width: 100vw;
-      height: 100vh;
     }
   }
 }

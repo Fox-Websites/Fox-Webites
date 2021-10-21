@@ -24,7 +24,7 @@
       flex-direction: column;
       gap: 10px;
       .contact__content__form__input {
-        border: none;
+        border: 1px solid $raisinBlack;
         border-radius: 20px;
         background: rgba(210, 218, 237, 0.17);
         padding: 15px 25px;
