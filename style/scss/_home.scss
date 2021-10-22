@@ -176,6 +176,13 @@
       background-color: $tangerine;
       padding: 15px 25px;
       border-radius: 25px;
+      transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
+      &:hover {
+        background-color: $peachOrange;
+        p {
+          color: $tangerine;
+        }
+      }
     }
   }
 }
@@ -222,6 +229,13 @@
         background-color: $white;
         padding: 15px 25px;
         border-radius: 25px;
+        transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
+        &:hover {
+          background-color: $peachOrange;
+          p {
+            color: $white;
+          }
+        }
       }
     }
   }

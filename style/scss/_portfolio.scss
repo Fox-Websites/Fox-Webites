@@ -67,7 +67,6 @@
         }
         .portfolio__item__content__button {
           text-transform: uppercase;
-          font-weight: 600;
           border: none;
           border-radius: 20px;
           background: $tangerine;
@@ -75,6 +74,16 @@
           padding: 10px 20px;
           width: 200px;
           cursor: pointer;
+          transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
+          p {
+            font-weight: 600;
+          }
+          &:hover {
+            background-color: $peachOrange;
+            p {
+              color: $tangerine;
+            }
+          }
         }
       }
       .portfolio__item__content__invert {

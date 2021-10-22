@@ -38,6 +38,11 @@
         padding: 15px 25px;
         color: $white;
         cursor: pointer;
+        transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
+        &:hover {
+          background-color: $peachOrange;
+          color: $tangerine;
+        }
       }
     }
   }
