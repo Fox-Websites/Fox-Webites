@@ -4,6 +4,7 @@
 @import "home";
 @import "about";
 @import "portfolio";
+@import "blog";
 @import "post";
 @import "contact";
 @import "policy";
@@ -11,19 +12,6 @@
 @import "modal";
 
 // TEMP
-
-.soon {
-  width: 100%;
-  p {
-    font-size: 48px;
-    text-align: center;
-    color: $tangerine;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: 100px 0;
-  }
-}
-
 .logo_temp {
   width: 50px;
   height: 50px;
@@ -34,7 +22,6 @@
   justify-content: center;
   align-items: center;
 }
-
 // TEMP
 
 html {
@@ -374,7 +361,7 @@ html {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      margin-top: 25px;
+      margin-top: 50px;
       #footer__information__copyright {
         p {
           color: $white;
