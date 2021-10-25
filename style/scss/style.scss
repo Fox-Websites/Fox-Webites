@@ -256,6 +256,19 @@ html {
           display: flex;
           flex-direction: row;
           gap: 20px;
+          li {
+            a {
+              svg {
+                path {
+                  transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
+                  fill: $white;
+                }
+                &:hover path{
+                  fill: $tangerine;
+                }
+              }
+            }
+          }
         }
       }
       #footer__content__menu {
