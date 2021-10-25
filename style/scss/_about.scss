@@ -5,6 +5,7 @@
   flex-direction: row;
   align-items: center;
   gap: 50px;
+  padding: 0 10px;
   #about__content {
     flex: 1;
     display: flex;
@@ -58,6 +59,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 0 10px;
   #teamwork__title {
     font-size: 32px;
     font-weight: 600;
