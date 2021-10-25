@@ -1,5 +1,5 @@
 #terms {
-  width: $widthContent;
+  max-width: $widthContent;
   margin: 100px auto;
   display: flex;
   flex-direction: column;
@@ -46,6 +46,7 @@
 /* Smartphone */
 @media only screen and (max-width: 768px) {
   #terms {
+    padding: 0 10px;
     #terms__title {
       font-size: 32px;
       text-align: center;

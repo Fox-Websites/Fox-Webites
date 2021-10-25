@@ -1,5 +1,5 @@
 #schedule {
-  width: $widthContent;
+  max-width: $widthContent;
   margin: 100px auto;
   display: flex;
   flex-direction: column;
@@ -44,10 +44,10 @@
 }
 
 #differential {
-  width: 100%;
+  max-width: 100%;
   background-color: $peachOrange;
   #differential__container {
-    width: $widthContent;
+    max-width: $widthContent;
     margin: 0 auto;
     padding: 100px 0;
     #differential__header {
@@ -104,7 +104,7 @@
 }
 
 #projects {
-  width: $widthContent;
+  max-width: $widthContent;
   margin: 100px auto;
   display: flex;
   flex-direction: column;
@@ -242,7 +242,7 @@
 }
 
 #testimonial {
-  width: $widthContent;
+  max-width: $widthContent;
   margin: 100px auto;
   .swiper {
     width: 100%;
@@ -288,7 +288,7 @@
   width: 100%;
   background-color: $peachOrange;
   #posts__container {
-    width: $widthContent;
+    max-width: $widthContent;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -349,6 +349,7 @@
 /* Smartphone */
 @media only screen and (max-width: 768px) {
   #schedule {
+    padding: 0 10px;
     #schedule__title {
       font-size: 24px;
     }
@@ -360,6 +361,8 @@
 
   #differential {
     #differential__container {
+      padding-left: 10px;
+      padding-right: 10px;
       #differential__header {
         flex-direction: column;
         #differential__title {
@@ -373,6 +376,7 @@
   }
 
   #projects {
+    padding: 0 10px;
     #projects__title {
       font-size: 24px;
     }
@@ -418,6 +422,7 @@
 
   #posts {
     #posts__container {
+      padding: 0 10px;
       #posts__list {
         flex-direction: column;
         gap: 50px;

@@ -1,5 +1,5 @@
 #contact {
-  width: $widthContent;
+  max-width: $widthContent;
   margin: 100px auto;
   display: flex;
   flex-direction: row;
@@ -120,6 +120,7 @@
   #contact {
     flex-direction: column;
     gap: 30px;
+    padding: 0 10px;
     #contact__content {
       #contact__content__title {
         text-align: center;
