@@ -4,22 +4,13 @@
 @import "home";
 @import "about";
 @import "portfolio";
+@import "post";
 @import "contact";
 @import "policy";
 @import "terms";
 @import "modal";
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.menu__active {
-  color: $tangerine !important;
-}
+// TEMP
 
 .soon {
   width: 100%;
@@ -42,6 +33,16 @@ html {
   border-radius: 10px;
   justify-content: center;
   align-items: center;
+}
+
+// TEMP
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu__active {
+  color: $tangerine !important;
 }
 
 .header__shadow {
