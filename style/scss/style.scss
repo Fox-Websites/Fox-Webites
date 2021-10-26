@@ -11,6 +11,15 @@
 @import "terms";
 @import "modal";
 
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(60px);
+  }
+}
+
 // TEMP
 .logo_temp {
   width: 50px;
@@ -152,8 +161,7 @@ html {
       position: absolute;
       width: 100%;
       height: $boxHeight;
-      background-color: #f4c09b;
-      opacity: 0.7;
+      background-color: rgba(33, 33, 33, 0.75);
     }
   }
   #banner__content {
@@ -166,19 +174,29 @@ html {
     align-items: center;
     gap: 15px;
     #banner__title {
-      width: 650px;
+      width: 700px;
       font-weight: 600;
-      color: $raisinBlack;
-      font-size: 64px;
+      color: $white;
+      font-size: 48px;
       text-align: center;
       text-transform: uppercase;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      span {
+        #main.typer {
+          color: $tangerine;
+        }
+      }
     }
     #banner_subtitle {
       width: 650px;
-      font-weight: 500;
-      color: $davysGrey;
+      font-weight: 300;
+      color: $white;
       font-size: 18px;
       text-align: center;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      span {
+        font-weight: bold;
+      }
     }
     #banner__cta {
       border: none;
@@ -194,9 +212,16 @@ html {
       border-radius: 25px;
       transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
       &:hover {
-        background-color: $peachOrange;
+        background-color: $white;
         p {
           color: $tangerine;
+        }
+      }
+    }
+    #banner__scroll__down {
+      svg {
+        #wheel {
+          animation: scroll ease 2s infinite;
         }
       }
     }
@@ -263,7 +288,7 @@ html {
                   transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
                   fill: $white;
                 }
-                &:hover path{
+                &:hover path {
                   fill: $tangerine;
                 }
               }
@@ -362,7 +387,7 @@ html {
             cursor: pointer;
             transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
             &:hover {
-              background-color: $peachOrange;
+              background-color: $white;
               color: $tangerine;
             }
           }
@@ -481,6 +506,7 @@ html {
       }
       #footer__information {
         flex-direction: column-reverse;
+        margin-top: 25px;
         #footer__information__copyright {
           p {
             color: $white;
@@ -596,7 +622,7 @@ html {
     #banner__content {
       #banner__title {
         width: 100%;
-        font-size: 42px;
+        font-size: 32px;
       }
       #banner_subtitle {
         width: 100%;
@@ -680,7 +706,7 @@ html {
           gap: 5px;
           a {
             text-align: center;
-          }
+          } 
         }
       }
     }
