@@ -28,7 +28,15 @@ menuItems.addEventListener("touchStart", toogleItemMenu);
 // BACK TO TOP
 let backToTop = document.getElementById("back_to_top");
 
+// INDICATOR
+const indicator = document.getElementById("indicator");
+const maxHeight = document.body.scrollHeight - window.innerHeight;
+
 window.addEventListener("scroll", () => {
+  const percent = (window.scrollY / maxHeight) * 100;
+  indicator.style.width = `${Math.round(percent)}%`
+  console.log(`${Math.round(percent)}%`);
+
   if (
     document.body.scrollTop > 400 ||
     document.documentElement.scrollTop > 400
@@ -46,3 +54,4 @@ backToTop.addEventListener("click", () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
+

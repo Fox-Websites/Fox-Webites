@@ -45,6 +45,15 @@ html {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
+#indicator {
+  background-color: $tangerine;
+  height: 5px;
+  width: 0;
+  position: fixed;
+  top: 0;
+  z-index: 888;
+}
+
 #header {
   width: 100%;
   #header__container {
@@ -120,7 +129,7 @@ html {
       opacity: 0.5;
       video {
         object-fit: cover;
-        width: 100%; 
+        width: 100%;
         height: 100%;
       }
     }
@@ -402,7 +411,7 @@ html {
   border-radius: 10px;
   transition: 0.2s;
   text-decoration: none;
-  z-index: 99;
+  z-index: 999;
   -webkit-tap-highlight-color: transparent;
   &:hover {
     background-color: $peachOrange;
@@ -673,7 +682,7 @@ html {
           gap: 5px;
           a {
             text-align: center;
-          } 
+          }
         }
       }
     }
