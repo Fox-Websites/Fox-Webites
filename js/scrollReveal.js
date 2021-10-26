@@ -59,6 +59,5 @@ function animationBottom() {
 }
 
 animationLeft();
-animationRight();
 animationTop();
 animationBottom();
