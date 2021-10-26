@@ -17,24 +17,6 @@ function animationLeft() {
   ScrollReveal().reveal("#contact__info__contact", { delay: 200 });
 }
 
-function animationRight() {
-  const sr = ScrollReveal({
-    origin: "right",
-    distance: "50px",
-    duration: "1000",
-  });
-
-  ScrollReveal().reveal("#schedule__subtitle", { delay: 250 });
-  ScrollReveal().reveal("#differential__subtitle", { delay: 250 });
-  ScrollReveal().reveal("#projects__subtitle", { delay: 250 });
-  ScrollReveal().reveal("#about__content__description", { delay: 250 });
-  ScrollReveal().reveal("#teamwork__subtitle", { delay: 250 });
-  ScrollReveal().reveal("#portfolio__subtitle", { delay: 250 });
-  ScrollReveal().reveal("#blog__subtitle", { delay: 250 });
-  ScrollReveal().reveal("#contact__content__subtitle", { delay: 250 });
-  ScrollReveal().reveal("#contact__info__location", { delay: 200 });
-}
-
 function animationTop() {
   const sr = ScrollReveal({
     origin: "top",
@@ -65,6 +47,15 @@ function animationBottom() {
   ScrollReveal().reveal("#projects__button", { delay: 200 });
   ScrollReveal().reveal("#budget__content__cta", { delay: 250 });
   ScrollReveal().reveal("#contact__info__contact__map", { delay: 300 });
+  ScrollReveal().reveal("#schedule__subtitle", { delay: 250 });
+  ScrollReveal().reveal("#differential__subtitle", { delay: 250 });
+  ScrollReveal().reveal("#projects__subtitle", { delay: 250 });
+  ScrollReveal().reveal("#about__content__description", { delay: 250 });
+  ScrollReveal().reveal("#teamwork__subtitle", { delay: 250 });
+  ScrollReveal().reveal("#portfolio__subtitle", { delay: 250 });
+  ScrollReveal().reveal("#blog__subtitle", { delay: 250 });
+  ScrollReveal().reveal("#contact__content__subtitle", { delay: 250 });
+  ScrollReveal().reveal("#contact__info__location", { delay: 200 });
 }
 
 animationLeft();
