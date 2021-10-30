@@ -5,7 +5,7 @@
         $pagina = get_page_by_title('sobre');
     } elseif (is_page('portfolio')) {
         $pagina = get_page_by_title('portfolio');
-    } elseif (is_page('blog')) {
+    } else {
         $pagina = get_page_by_title('blog');
     }
 ?>

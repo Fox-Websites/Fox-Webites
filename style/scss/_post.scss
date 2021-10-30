@@ -22,9 +22,9 @@
       gap: 10px;
       margin-top: 50px;
       #post__content__info__author__image {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
+        img {
+          border-radius: 50%;
+        }
       }
     }
     #post__content__title {

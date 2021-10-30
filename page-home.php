@@ -40,24 +40,20 @@
     </section>
 
     <section id="projects">
-        <!-- <h2 id="projects__title">Conheça alguns de nossos <span>PROJETOS</span></h2> -->
         <h2 id="projects__title"><?php the_field('projetos_titulo'); ?></h2>
         <p id="projects__subtitle"><?php the_field('projetos_descricao'); ?></p>
         <div id="projects__list">
             <div class="project__item">
                 <img class="project__item__image" src="assets/images/project1.png" alt="Projeto 1">
                 <h3 class="project__item__title">Luxury Hotels</h3>
-                <p class="project__item__subtitle">Cliente de Camaquã - RS</p>
             </div>
             <div class="project__item">
                 <img class="project__item__image" src="assets/images/project2.png" alt="Projeto 1">
                 <h3 class="project__item__title">Digital Architects</h3>
-                <p class="project__item__subtitle">Cliente de Camaquã - RS</p>
             </div>
             <div class="project__item">
                 <img class="project__item__image" src="assets/images/project3.png" alt="Projeto 1">
                 <h3 class="project__item__title">Loop Studios</h3>
-                <p class="project__item__subtitle">Cliente de Camaquã - RS</p>
             </div>
         </div>
         <div id="projects__button">

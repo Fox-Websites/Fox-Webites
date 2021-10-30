@@ -25,6 +25,8 @@
     grid-template-areas: "blog__grid__item blog__grid__item blog__grid__item";
     grid-gap: 20px;
     .blog__grid__item {
+      // grid-area: "blog__grid__item";
+      // grid-row: blog__grid__item;
       flex: 1;
       display: flex;
       flex-direction: column;

@@ -302,14 +302,12 @@
     flex-direction: column;
     padding: 100px 10px;
     #posts__title {
-      p {
-        font-size: 32px;
-        font-weight: 600;
-        color: $raisinBlack;
-        span {
-          color: $white;
-          text-transform: uppercase;
-        }
+      font-size: 32px;
+      font-weight: 600;
+      color: $raisinBlack;
+      span {
+        color: $white;
+        text-transform: uppercase;
       }
     }
     #posts__list {

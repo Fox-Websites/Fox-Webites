@@ -1,7 +1,6 @@
 <?php $blog = get_page_by_title('blog')?>
 <section id="posts">
     <div id="posts__container">
-        <!-- <h2 id="posts__title">Blog & Notícias Recentes</h2> -->
         <h2 id="posts__title">
             <?php the_field('blog_noticias_titulo', $blog); ?>
         </h2>
