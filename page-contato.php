@@ -1,5 +1,9 @@
-<?php get_header(); ?>
+<?php
+    // Template Name: Contato
+    get_header();
+?>
 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <section id="contact">
     <div id="contact__content">
       <h1 id="contact__content__title">
@@ -48,5 +52,6 @@
       </div>
     </div>
   </section>
+<?php endwhile; else: endif; ?>
 
 <?php get_footer(); ?>

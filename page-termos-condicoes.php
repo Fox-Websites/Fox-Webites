@@ -1,5 +1,9 @@
-<?php get_header(); ?>
+<?php
+    // Template Name: Termos e Condições
+    get_header();
+?>
 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <section id="terms">
     <h1 id="terms__title">Termos e Condições</h1>
 
@@ -326,5 +330,6 @@
       qualquer natureza.
     </p>
   </section>
+<?php endwhile; else: endif; ?>
 
 <?php get_footer(); ?>

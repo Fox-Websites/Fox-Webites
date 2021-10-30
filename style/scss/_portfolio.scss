@@ -76,7 +76,9 @@
           width: 200px;
           cursor: pointer;
           transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
+          display: flex;
           p {
+            text-align: center;
             font-weight: 600;
           }
           &:hover {

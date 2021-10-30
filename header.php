@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fox Websites | Desenvolvimento profissional de sites</title>
+    <title>
+        <?php bloginfo('name'); ?>
+    </title>
     <meta name="description"
         content="Agência Digital especializada no desenvolvimento de sites que vão transformar o seu negócio, trazendo mais clientes e mais vendas." />
     <link rel="canonical" href="https://fox-websites.netlify.app/#" />
@@ -40,6 +42,7 @@
             <a href="index.html" id="header__brand">
                 <div class="logo_temp">
                     <p>Logo</p>
+                    <!-- <img src="<?php get_template_directory_uri(); ?>/assets/logo.png" alt=""> -->
                 </div>
             </a>
             <div id="header__info">
@@ -50,11 +53,11 @@
                         <span id="hamburguer"></span>
                     </button>
                     <ul id="menu__items" role="menu">
-                        <li><a class="menu__active" href="index.html">Home</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="portifolio.html">Portfólio</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contato.html">Contate Nos</a></li>
+                        <li><a class="menu__active" href="/foxwebsites/home">Home</a></li>
+                        <li><a href="/foxwebsites/sobre">Sobre Nós</a></li>
+                        <li><a href="/foxwebsites/portfolio">Portfólio</a></li>
+                        <li><a href="/foxwebsites/blog">Blog</a></li>
+                        <li><a href="/foxwebsites/contato">Contate Nos</a></li>
                     </ul>
                 </nav>
                 <button id="header__menu__orcamento">
