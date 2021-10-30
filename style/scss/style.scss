@@ -163,8 +163,8 @@ html {
         }
       }
     }
-    #banner_subtitle {
-      width: 650px;
+    #banner_subtitle { 
+      max-width: 650px;   
       font-weight: 300;
       color: $white;
       font-size: 18px;

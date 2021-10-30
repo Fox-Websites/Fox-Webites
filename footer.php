@@ -44,19 +44,19 @@
             <div id="footer__content__menu">
                 <p id="footer__content__menu__title">Menu</p>
                 <ul id="footer__content__menu_list">
-                    <li id="footer__content__menu__list__item"><a href="index.html">
+                    <li id="footer__content__menu__list__item"><a href="/foxwebsites">
                             <p>Home</p>
                         </a></li>
-                    <li id="footer__content__menu__list__item"><a href="sobre.html">
+                    <li id="footer__content__menu__list__item"><a href="/foxwebsites/sobre">
                             <p>Sobre Nós</p>
                         </a></li>
-                    <li id="footer__content__menu__list__item"><a href="portifolio.html">
+                    <li id="footer__content__menu__list__item"><a href="/foxwebsites/portfolio">
                             <p>Portfólio</p>
                         </a></li>
-                    <li id="footer__content__menu__list__item"><a href="blog.html">
+                    <li id="footer__content__menu__list__item"><a href="/foxwebsites/blog">
                             <p>Blog</p>
                         </a></li>
-                    <li id="footer__content__menu__list__item"><a href="contato.html">
+                    <li id="footer__content__menu__list__item"><a href="/foxwebsites/contato">
                             <p>Contate Nos</p>
                         </a></li>
                 </ul>
@@ -83,7 +83,7 @@
         </div>
         <div id="footer__information">
             <div id="footer__information__copyright">
-                <p>2021 - Fox Websites &copy; - Todos os direitos reservados</p>
+                <p><?php echo date("Y"); ?> - Fox Websites &copy; - Todos os direitos reservados</p>
             </div>
             <div id="footer__information__privacy__term">
                 <a href="politica-privacidade.html">Política de Privacidade</a>

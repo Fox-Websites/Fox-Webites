@@ -20,16 +20,29 @@
         </p>
         <a href="<?php the_permalink() ;?>" class="blog__grid__item__cta">
           <p>Ver mais</p>
-          <img src="assets/icons/Icon.svg" alt="Icon Right Arrow" />
+          <i class="fas fa-arrow-right"></i>
         </a>
       </div>
 
     <?php endwhile; ?>
     </div>
-      <?php previous_posts_link('Posts antigos'); ?>
-      <?php next_posts_link('Posts novos'); ?>
-
-    <?php else: endif; ?>
+    <div id="blog__buttons">
+      <?php
+        $next_link = get_next_posts_link('Posts novos');
+        $previous_link = get_previous_posts_link('Posts antigos');
+        if ($previous_link) :
+      ?>
+        <div class="blog__buttons__action">
+          <i class="fas fa-arrow-left"></i>
+          <?php previous_posts_link('Posts antigos'); ?>
+        </div>
+      <?php endif; if ($next_link) : ?>
+        <div class="blog__buttons__action">
+          <?php next_posts_link('Posts novos'); ?>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+    </div>
+    <?php endif; else: endif; ?>
 </section>
 
 <?php get_footer(); ?>
