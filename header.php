@@ -37,7 +37,7 @@
 <body>
     <div id="indicator"></div>
 
-    <header id="header" class="header__shadow">
+    <header id="header">
         <div id="header__container">
             <a href="index.html" id="header__brand">
                 <div class="logo_temp">

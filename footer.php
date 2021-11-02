@@ -86,8 +86,8 @@
                 <p><?php echo date("Y"); ?> - Fox Websites &copy; - Todos os direitos reservados</p>
             </div>
             <div id="footer__information__privacy__term">
-                <a href="politica-privacidade.html">Política de Privacidade</a>
-                <a href="termos-condicoes.html">Termos e Condições</a>
+                <a href="/foxwebsites/politica-de-privacidade">Política de Privacidade</a>
+                <a href="/foxwebsites/termos-e-condicoes">Termos e Condições</a>
             </div>
         </div>
     </div>
