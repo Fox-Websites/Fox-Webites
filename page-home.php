@@ -43,21 +43,15 @@
         <h2 id="projects__title"><?php the_field('projetos_titulo'); ?></h2>
         <p id="projects__subtitle"><?php the_field('projetos_descricao'); ?></p>
         <div id="projects__list">
-            <div class="project__item">
-                <img class="project__item__image" src="assets/images/project1.png" alt="Projeto 1">
-                <h3 class="project__item__title">Luxury Hotels</h3>
-            </div>
-            <div class="project__item">
-                <img class="project__item__image" src="assets/images/project2.png" alt="Projeto 1">
-                <h3 class="project__item__title">Digital Architects</h3>
-            </div>
-            <div class="project__item">
-                <img class="project__item__image" src="assets/images/project3.png" alt="Projeto 1">
-                <h3 class="project__item__title">Loop Studios</h3>
-            </div>
+            <?php $portfolio = get_page_by_title('portfolio'); $count = 0; if (have_rows('portfolio_item', $portfolio)) : while(have_rows('portfolio_item', $portfolio)) : $count++; if ($count > 3) : break; endif; the_row();?>
+                    <div class="project__item">
+                        <img class="project__item__image" src="<?php the_sub_field('portfolio_item_imagem', $portfolio); ?>" alt="<?php the_sub_field('portfolio_item_imagem_alt', $portfolio); ?>">
+                        <a href="<?php the_sub_field('portfolio_item_link', $portfolio); ?>" target="__blank" class="project__item__title"><?php the_sub_field('portfolio_item_titulo', $portfolio); ?></a>
+                    </div>
+                <?php endwhile; else: endif; ?>
         </div>
         <div id="projects__button">
-            <a href="portifolio.html" id="projects__cta">
+            <a href="/foxwebsites/portfolio/" id="projects__cta">
                 <p>Ver mais</p>
             </a>
         </div>
