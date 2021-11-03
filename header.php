@@ -38,7 +38,7 @@
 
     <header id="header">
         <div id="header__container">
-            <a href="index.html" id="header__brand">
+            <a href="/foxwebsites/" id="header__brand">
                 <div class="logo_temp">
                     <p>Logo</p>
                     <!-- <img src="<?php get_template_directory_uri(); ?>/assets/logo.png" alt=""> -->

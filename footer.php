@@ -2,7 +2,7 @@
     <div id="footer__wrapper">
         <div id="footer__content">
             <div id="footer__content__company">
-                <a href="index.html">
+                <a href="/foxwebsites/">
                     <div class="logo_temp">
                         <p>Logo</p>
                     </div>
