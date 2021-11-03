@@ -21,7 +21,6 @@
     <meta property="og:image" content="https://fox-websites.netlify.app/assets/images/about.jpg" />
     <meta property="og:image:width" content="1920" />
     <meta property="og:image:height" content="1080" />
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"

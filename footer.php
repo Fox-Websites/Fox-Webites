@@ -112,10 +112,6 @@
 </div>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-<script src="js/swiper.js"></script>
-<script src="js/script.js"></script>
-<script src="js/scrollReveal.js"></script>
-<script src="js/modal.js"></script>
 <?php wp_footer(); ?>
 </body>
 
