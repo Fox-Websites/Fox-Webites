@@ -344,9 +344,12 @@
           align-items: center;
           gap: 5px;
           padding: 0 30px 20px 30px;
-          p {
+          p { 
             color: $tangerine;
             font-weight: 500;
+          }
+          i {
+            color: $tangerine;
           }
         }
       }

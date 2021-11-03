@@ -33,20 +33,23 @@
       font-size: 48px;
       margin: 20px 0 20px 0;
     }
-    .post__content__paragraph {
-      font-weight: 500;
-      color: $davysGrey;
-      margin-bottom: 20px;
+    #post__content__text {
+      p {
+        font-weight: 500;
+        color: $davysGrey;
+        margin-bottom: 20px;
+      }
       a {
         color: $tangerine;
         font-weight: 600;
+        cursor: pointer;
       }
-    }
-    .post__content__subtitle {
-      font-weight: 600;
-      color: $raisinBlack;
-      font-size: 32px;
-      margin: 20px 0 20px 0;
+      h2 {  
+        font-weight: 600;
+        color: $raisinBlack;
+        font-size: 32px;
+        margin: 20px 0 20px 0;
+      }
     }
   }
 }

@@ -14,11 +14,15 @@
 			<p id="post__content__info__date">Postado em <?php echo get_the_date('d/m/Y'); ?></p>
 		</div>
 		<h1 id="post__content__title"><?php the_title(); ?></h1>
-		<?php the_content(); ?>
+		<div id="post__content__text">
+			<?php the_content(); ?>
+		</div>
 		</article>
 	</section>
 
-<?php endwhile; else: ?>
+	<?php include(TEMPLATEPATH . "/includes/blog-noticias.php"); ?>
+
+<?php endwhile; else: ?> 
 <p><h1>Página não encontrada</h1></p>
 <?php endif; ?>
 

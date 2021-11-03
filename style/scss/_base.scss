@@ -1,6 +1,7 @@
 $arsenic: #394149;
 $raisinBlack: #212121;
 $tangerine: #f58a07;
+$mustardBrown: #ce7100;
 $peachOrange: #f4c09b;
 $oldLace: #fef3e6;
 $white: #ffffff;
@@ -22,7 +23,7 @@ $boxHeight: calc(100vh - 82px);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $tangerine;
+  background-color: $mustardBrown;
 }
 
 body {
