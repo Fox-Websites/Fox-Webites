@@ -52,13 +52,13 @@
                         Menu
                         <span id="hamburguer"></span>
                     </button>
-                    <ul id="menu__items" role="menu">
-                        <li><a class="menu__active" href="/foxwebsites/home">Home</a></li>
-                        <li><a href="/foxwebsites/sobre">Sobre Nós</a></li>
-                        <li><a href="/foxwebsites/portfolio">Portfólio</a></li>
-                        <li><a href="/foxwebsites/blog">Blog</a></li>
-                        <li><a href="/foxwebsites/contato">Contate Nos</a></li>
-                    </ul>
+                    <?php
+                        $args = array(
+                            'menu' => 'principal',
+                            'container' => false
+                        );
+                        wp_nav_menu( $args );
+                    ?>
                 </nav>
                 <button id="header__menu__orcamento">
                     <p>Orçamento</p>

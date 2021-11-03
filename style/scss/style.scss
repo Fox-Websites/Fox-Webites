@@ -37,8 +37,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.menu__active {
-  color: $tangerine !important;
+.current-menu-item {
+  a {
+    color: $tangerine !important;
+  }
 }
 
 #indicator {
@@ -70,7 +72,7 @@ html {
         #btn-mobile {
           display: none;
         }
-        #menu__items {
+        #menu-menu-principal {
           display: flex;
           gap: 32px;
           li {
@@ -277,19 +279,17 @@ html {
           font-weight: 600;
           color: $white;
         }
-        #footer__content__menu_list {
+        #menu-menu-principal-1 {
           display: flex;
           flex-direction: column;
           gap: 5px;
-          #footer__content__menu__list__item {
+          li {
             a {
-              p {
-                color: $white;
-                font-weight: 500;
-                transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
-                &:hover {
-                  color: $tangerine;
-                }
+              color: $white;  
+              font-weight: 500;
+              transition: 0.5s cubic-bezier(0.06, 0.29, 0.19, 1.4);
+              &:hover {
+                color: $tangerine;
               }
             }
           }
@@ -437,8 +437,8 @@ html {
           justify-content: center;
           align-items: center;
           margin-top: 30px;
-          #footer__content__menu_list {
-            #footer__content__menu__list__item {
+          #menu-menu-principal-1 {
+            li {
               a {
                 p {
                   text-align: center;
@@ -545,7 +545,7 @@ html {
             cursor: pointer;
             gap: 0.5rem;
           }
-          #menu__items {
+          #menu-menu-principal {
             display: block;
             position: absolute;
             width: 100%;
@@ -568,7 +568,7 @@ html {
             }
           }
         }
-        #header__menu.active #menu__items {
+        #header__menu.active #menu-menu-principal {
           height: calc(100vh - 70px);
           visibility: visible;
           overflow-y: auto;
@@ -625,8 +625,8 @@ html {
           justify-content: center;
           align-items: center;
           margin-top: 30px;
-          #footer__content__menu_list {
-            #footer__content__menu__list__item {
+          #menu-menu-principal-1 {
+            li {
               a {
                 p {
                   text-align: center;

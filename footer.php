@@ -43,23 +43,13 @@
             </div>
             <div id="footer__content__menu">
                 <p id="footer__content__menu__title">Menu</p>
-                <ul id="footer__content__menu_list">
-                    <li id="footer__content__menu__list__item"><a href="/foxwebsites">
-                            <p>Home</p>
-                        </a></li>
-                    <li id="footer__content__menu__list__item"><a href="/foxwebsites/sobre">
-                            <p>Sobre Nós</p>
-                        </a></li>
-                    <li id="footer__content__menu__list__item"><a href="/foxwebsites/portfolio">
-                            <p>Portfólio</p>
-                        </a></li>
-                    <li id="footer__content__menu__list__item"><a href="/foxwebsites/blog">
-                            <p>Blog</p>
-                        </a></li>
-                    <li id="footer__content__menu__list__item"><a href="/foxwebsites/contato">
-                            <p>Contate Nos</p>
-                        </a></li>
-                </ul>
+                <?php
+                    $args = array(
+                        'menu' => 'principal',
+                        'container' => false
+                    );
+                    wp_nav_menu( $args );
+                ?>
             </div>
             <div id="footer__content__contact">
                 <p id="footer__content__contact__title">Contato</p>

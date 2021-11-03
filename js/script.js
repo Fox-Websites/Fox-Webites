@@ -1,6 +1,6 @@
 // MENU
 const btnMobile = document.getElementById("btn-mobile");
-const menuItems = document.getElementById("menu__items");
+const menuItems = document.getElementById("menu-menu-principal");
 const menu = document.getElementById("header__menu");
 
 function toogleMenu(event) {
