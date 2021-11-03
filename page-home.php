@@ -23,7 +23,6 @@
     <section id="differential">
         <div id="differential__container">
             <div id="differential__header">
-                <!-- <h2 id="differential__title">Conheça um pouco do <span>DIFERENCIAL</span> de nossos sites profissionais para sua empresa</h2> -->
                 <h2 id="differential__title"><?php the_field('diferencial_titulo'); ?></h2>
                 <p id="differential__subtitle"><?php the_field('diferencial_descricao'); ?></p>
             </div>
@@ -58,9 +57,9 @@
     </section>
 
     <section id="budget">
-        <div id="budget__image"></div>
+        <img id="budget__image" src="<?php the_field('orcamento_imagem'); ?>" alt="Alt"> 
         <div id="budget__content">
-            <h2 id="budget__content__title">Juntos podemos conquistar coisas incriveis!</h2>
+            <h2 id="budget__content__title"><?php the_field('orcamento_titulo'); ?></h2>
             <div id="budget__buttom">
                 <button id="budget__content__cta">
                     <p>Clique aqui e faça um orçamento</p>

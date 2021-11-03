@@ -13,7 +13,7 @@
         Preencha o formulário e nossa equipe entrará em contato em até 24
         horas.
       </p>
-      <form id="contact__content__form" action="https://formspree.io/f/mwkajoyg" method="POST">
+      <form id="contact__content__form" action="<?php echo get_template_directory_uri(); ?>/enviar.php" method="POST">
         <input class="contact__content__form__input" placeholder="Nome Completo" type="text" name="name" />
         <input class="contact__content__form__input" placeholder="E-mail" type="email" name="email" />
         <input class="contact__content__form__input" placeholder="Telefone Celular" type="tel" name="tel" />
@@ -27,13 +27,13 @@
           <h2 id="contact__info__contact">Contato</h2>
           <ul id="contact__info__contac_list">
             <li>
-              <a href="mailto:contato@foxwebsites.com.br">
-                <p>contato@foxwebsites.com.br</p>
+              <a href="mailto:<?php the_field('contato_email'); ?>">
+                <p><?php the_field('contato_email'); ?></p>
               </a>
             </li>
             <li>
-              <a href="tel:51996236798">
-                <p>+ 55 (51) 9 9623-6798</p>
+              <a href="tel:+<?php the_field('contato_telefone'); ?>">
+                <p><?php the_field('contato_telefone'); ?></p>
               </a>
             </li>
           </ul>

@@ -53,12 +53,13 @@
             </div>
             <div id="footer__content__contact">
                 <p id="footer__content__contact__title">Contato</p>
+                <?php $contato = get_page_by_title('contato'); ?>
                 <ul id="footer__content__contact_list">
-                    <li id="footer__content__contact__list__item"><a href="mailto:contato@foxwebsites.com.br">
-                            <p>contato@foxwebsites.com.br</p>
+                    <li id="footer__content__contact__list__item"><a href="mailto:<?php the_field('contato_email', $contato); ?>">
+                            <p><?php the_field('contato_email', $contato); ?></p>
                         </a></li>
-                    <li id="footer__content__contact__list__item"><a href="tel:+5551996236798">
-                            <p>+ (55) 51 99623 - 6798</p>
+                    <li id="footer__content__contact__list__item"><a href="tel:+<?php the_field('contato_telefone', $contato); ?>">
+                            <p><?php the_field('contato_telefone', $contato); ?></p>
                         </a></li>
                 </ul>
             </div>

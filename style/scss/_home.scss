@@ -5,15 +5,13 @@
   display: flex;
   flex-direction: column;
   #schedule__title {
-    p {
-      max-width: 600px;
-      color: $raisinBlack;
-      font-size: 32px;
-      font-weight: 600;
-      span {
-        text-transform: uppercase;
-        color: $tangerine;
-      }
+    max-width: 600px;
+    color: $raisinBlack;
+    font-size: 32px;
+    font-weight: 600;
+    span {
+      text-transform: uppercase;
+      color: $tangerine;
     }
   }
   #schedule__subtitle {
@@ -60,14 +58,12 @@
       gap: 20px;
       #differential__title {
         flex: 1;
-        p {
-          color: $raisinBlack;
-          font-weight: 600;
-          font-size: 32px;
-          span {
-            text-transform: uppercase;
-            color: $white;
-          }
+        color: $raisinBlack;
+        font-weight: 600;
+        font-size: 32px;
+        span {
+          text-transform: uppercase;
+          color: $white;
         }
       }
       #differential__subtitle {
@@ -115,16 +111,14 @@
   display: flex;
   flex-direction: column;
   #projects__title {
-    p {
-      max-width: 400px;
-      color: $raisinBlack;
-      font-size: 32px;
-      font-weight: 600;
-      cursor: pointer;
-      span {
-        text-transform: uppercase;
-        color: $tangerine;
-      }
+    max-width: 400px;
+    color: $raisinBlack;
+    font-size: 32px;
+    font-weight: 600;
+    cursor: pointer;
+    span {
+      text-transform: uppercase;
+      color: $tangerine;
     }
   }
   #projects__subtitle {
@@ -202,13 +196,10 @@
   display: flex;
   flex-direction: row;
   #budget__image {
-    flex: 1;
+    flex: 1;  
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    background-image: url("../../assets/images/orcamento.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
   #budget__content {
     flex: 1;
@@ -366,9 +357,7 @@
   #schedule {
     padding: 0 10px;
     #schedule__title {
-      p {
-        font-size: 24px;
-      }
+      font-size: 24px;
     }
     #schedule__list {
       flex-direction: column;
@@ -383,9 +372,7 @@
       #differential__header {
         flex-direction: column;
         #differential__title {
-          p {
-            font-size: 24px;
-          }
+          font-size: 24px; 
         }
       }
       #differential__list {
@@ -397,9 +384,7 @@
   #projects {
     padding: 0 10px;
     #projects__title {
-      p {
-        font-size: 24px;
-      }
+      font-size: 24px;
     }
     #projects__list {
       flex-direction: column;

@@ -28,8 +28,8 @@
     </div>
     <div id="blog__buttons">
       <?php
-        $next_link = get_next_posts_link('Posts novos');
-        $previous_link = get_previous_posts_link('Posts antigos');
+        $next_link = get_next_posts_link('Proximos Posts');
+        $previous_link = get_previous_posts_link('Posts Anteriores');
         if ($previous_link) :
       ?>
         <div class="blog__buttons__action">
