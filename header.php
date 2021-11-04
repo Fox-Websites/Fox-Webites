@@ -39,10 +39,8 @@
     <header id="header">
         <div id="header__container">
             <a href="/foxwebsites/" id="header__brand">
-                <div class="logo_temp">
-                    <p>Logo</p>
-                    <!-- <img src="<?php get_template_directory_uri(); ?>/assets/logo.png" alt=""> -->
-                </div>
+                <?php $home = get_page_by_title('home'); ?>
+                <img src="<?php the_field('logo', $home); ?>"" alt="">
             </a>
             <div id="header__info">
                 <nav id="header__menu">

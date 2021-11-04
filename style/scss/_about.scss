@@ -23,6 +23,10 @@
       font-weight: 500;
       font-size: 18px;
       color: $davysGrey;
+      span {
+        color: $tangerine;
+        font-weight: 600;
+      }
     }
   }
   #about__content__image {
@@ -86,6 +90,7 @@
       .teamwork__people__item__content__wrapper {
         // display: none;
         .teamwork__people__item__content {
+          width: calc(100% - 40px);
           position: absolute;
           bottom: 5px;
           display: flex;

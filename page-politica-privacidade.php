@@ -8,10 +8,9 @@
     <h1 id="policy__title">Policita de Privacidade</h1>
 
     <?php 
-      $date = get_the_modified_time('d/m/Y');
-      $time = get_the_modified_time('H:m:s'); ?>
+      $date = get_the_modified_time('j \d\e F \d\e Y');?>
   
-    <p id="terms__last_update">Ultima modificação: <?php echo $date; ?> <?php echo $time; ?></p>
+    <p id="terms__last_update">Ultima modificação: <?php echo $date; ?></p>
 
     <?php the_field('politica'); ?>
   </section>

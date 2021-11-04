@@ -2,10 +2,9 @@
     <div id="footer__wrapper">
         <div id="footer__content">
             <div id="footer__content__company">
-                <a href="/foxwebsites/">
-                    <div class="logo_temp">
-                        <p>Logo</p>
-                    </div>
+                <a href="/foxwebsites/" id="footer__content__company__logo">
+                    <?php $home = get_page_by_title('home'); ?>
+                    <img src="<?php the_field('logo', $home); ?>"" alt="">
                 </a>
                 <h2 id="footer__content__company__name">Fox Websites</h2>
                 <ul id="footer__content__company__social_netwworks">

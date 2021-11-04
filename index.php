@@ -11,7 +11,7 @@
 			</div>
 			<p id="post__content__info__author__name"><?php echo get_the_author_nickname(); ?></p>
 			<p> - </p>
-			<p id="post__content__info__date">Postado em <?php echo get_the_date('d/m/Y'); ?></p>
+			<p id="post__content__info__date">Postado em <?php echo get_the_date('j \d\e F \d\e Y'); ?></p>
 		</div>
 		<h1 id="post__content__title"><?php the_title(); ?></h1>
 		<div id="post__content__text">
